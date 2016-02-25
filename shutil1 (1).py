@@ -1,3 +1,5 @@
+# Script to move files from File A to File B that has been modified within the last 24 hours 
+
 import shutil
 import os
 import time

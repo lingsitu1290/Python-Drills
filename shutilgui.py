@@ -48,8 +48,8 @@ class windowClass(wx.Frame):
 
 
             if time_diff < last_24_hrs:
-                print 'File moved: {} '.format(src)
-                print "last modified: {}".format(time.ctime(os.path.getmtime(src)))
+                print 'File moved: {}'.format(src)
+                print 'last modified: {}'.format(time.ctime(os.path.getmtime(src)))
                 shutil.move(src, dst)
                 
         
@@ -69,4 +69,6 @@ def main():
     windowClass(None, title = 'Move files!')
     app.MainLoop()
 
-main()
+if __name__== "__main__":
+    main()
+
